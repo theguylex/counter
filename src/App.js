@@ -10,11 +10,12 @@ function App() {
 
   function decrement(){
     setCount(prevCount => prevCount - 1)
+  }
 
   function reset (){
     setCount(0)
   }
-  }
+
   return (
     <div className="App">
       <h1>count:{count}</h1>
