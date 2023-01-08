@@ -1,13 +1,19 @@
-import { useState, useReducer } from "react";
+import { useReducer } from "react";
 import "./App.css";
+
+const ACTIONS = {
+  INCREMENT: 'increment',
+  DECREMENT: 'decrement',
+  RESET: 'reset'
+}
 
 function reducer(state, action) {
   switch (action.type) {
-    case "increment":
+    case ACTIONS.INCREMENT:
       return { count: state.count + 1 };
-    case "decrement":
+    case ACTIONS.DECREMENT:
       return { count: state.count - 1 };
-      case "reset":
+      case ACTIONS.RESET:
         return {count: 0}
     default:
       return state;
