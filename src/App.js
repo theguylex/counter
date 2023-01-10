@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>count:{state.count}</h1>
+      <h1 className="output">Count:{state.count}</h1>
       <button onClick={increment}>Increment</button>
       <button onClick={decrement}>Decrement</button>
       <button onClick={reset} className="span-two">Reset</button>
