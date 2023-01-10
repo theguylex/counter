@@ -1,0 +1,14 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    /* border: 1px solid black; */
+    margin: 0;
+    background: linear-gradient(to right, #f6fa02, #00FF6C);
+}
+
+.App{
+    display: grid;
+    margin-top: 2rem;
+}
